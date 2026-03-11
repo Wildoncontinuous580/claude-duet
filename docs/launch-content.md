@@ -6,53 +6,48 @@ All drafts below are ready to copy-paste. Review, tweak tone if needed, and post
 
 ## 1. Twitter/X Thread (@Donatello_TT)
 
-### Tweet 1 (Main tweet)
-I built an open-source CLI that lets two developers share a Claude Code session in real-time.
+### Tweet 1 (Main tweet — 274 chars)
+I built an open-source CLI that lets two devs share a @claudeai Code session in real-time.
 
-Host runs Claude, partner sends prompts — both see everything streamed live, E2E encrypted.
-
-It's called claude-duet.
+P2P, E2E encrypted. Both see Claude's responses streamed live.
 
 npx claude-duet host
 
-https://github.com/EliranG/claude-duet
+github.com/EliranG/claude-duet
 
-### Tweet 2 (Reply)
+cc @bcherny @alexalbert__ @AnthropicAI
+
+### Tweet 2 (Reply — 231 chars)
 Why I built this:
 
 I lead R&D at Wix, building AI-first products with multi-agent systems.
 
-I kept wanting to pair program with colleagues using Claude Code — but there was no way to share a session.
+I kept wanting to pair with colleagues using Claude Code — but no way to share a session.
 
-So I built one. Open source, peer-to-peer, E2E encrypted.
+So I built one. Open source, P2P, E2E encrypted.
 
-### Tweet 3 (Reply)
+### Tweet 3 (Reply — 270 chars)
 When would you use this?
 
-→ Deep in a Claude Code session, want your colleague to jump in for 5 min to brainstorm? Send them a join command.
+- Deep in a session, want a colleague to jump in for 5 min? Send them a join command
+- Show your boss what AI coding looks like — no Zoom needed
+- Pair program across time zones. One Claude, both driving
+- Code review with Claude explaining live
 
-→ Need to show your boss what AI coding actually looks like? Don't screen share. Let them try it.
-
-→ Pair programming across time zones. One Claude, both driving.
-
-→ Code review with Claude explaining the changes live.
-
-### Tweet 4 (Reply)
+### Tweet 4 (Reply — 222 chars)
 How it works:
 
 - WebRTC peer-to-peer (default) — no server needed
 - E2E encrypted (NaCl secretbox)
-- Approval mode: host reviews partner's prompts before they run
-- Also supports LAN, Cloudflare tunnel, or self-hosted relay
+- Host reviews partner's prompts before they run
+- Also supports Cloudflare tunnel, LAN, or SSH
 
-### Tweet 5 (Reply)
-npm install -g claude-duet
-
-Or just: npx claude-duet host
+### Tweet 5 (Reply — 126 chars)
+npx claude-duet host
 
 MIT licensed. PRs welcome.
 
-https://github.com/EliranG/claude-duet
+github.com/EliranG/claude-duet
 
 ---
 

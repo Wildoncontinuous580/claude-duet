@@ -54,12 +54,12 @@
   <text x="640" y="305" font-family="'Inter', 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" fill="#c4b5fd" text-anchor="middle" font-weight="400" letter-spacing="0.5">two devs, one claude</text>
 
   <!-- Description -->
-  <text x="640" y="355" font-family="'Inter', 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#555577" text-anchor="middle" letter-spacing="1">REAL-TIME SHARED AI SESSIONS  ·  END-TO-END ENCRYPTED  ·  OPEN SOURCE</text>
+  <text x="640" y="355" font-family="'Inter', 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#555577" text-anchor="middle" letter-spacing="1">REAL-TIME SHARED AI SESSIONS  ·  PEER-TO-PEER  ·  E2E ENCRYPTED  ·  OPEN SOURCE</text>
 
   <!-- Pill badges row -->
   <g transform="translate(372, 385)">
     <rect x="0" y="0" width="100" height="30" rx="6" fill="none" stroke="#7c3aed" stroke-width="1" stroke-opacity="0.4" />
-    <text x="50" y="20" font-family="'SF Mono', Menlo, monospace" font-size="11" fill="#a78bfa" text-anchor="middle">encrypted</text>
+    <text x="50" y="20" font-family="'SF Mono', Menlo, monospace" font-size="11" fill="#a78bfa" text-anchor="middle">p2p</text>
   </g>
   <g transform="translate(486, 385)">
     <rect x="0" y="0" width="105" height="30" rx="6" fill="none" stroke="#7c3aed" stroke-width="1" stroke-opacity="0.4" />
@@ -71,7 +71,7 @@
   </g>
   <g transform="translate(739, 385)">
     <rect x="0" y="0" width="90" height="30" rx="6" fill="none" stroke="#7c3aed" stroke-width="1" stroke-opacity="0.4" />
-    <text x="45" y="20" font-family="'SF Mono', Menlo, monospace" font-size="11" fill="#a78bfa" text-anchor="middle">websocket</text>
+    <text x="45" y="20" font-family="'SF Mono', Menlo, monospace" font-size="11" fill="#a78bfa" text-anchor="middle">encrypted</text>
   </g>
 
   <!-- Left terminal (Host) -->
