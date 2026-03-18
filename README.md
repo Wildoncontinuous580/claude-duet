@@ -143,6 +143,10 @@ Project-level config (`.claude-duet.json`) overrides user config. CLI flags over
 - **P2P Direct** — WebRTC data channel by default, no server or relay in the data path
 - **Host Controls Everything** — Claude runs on your machine, your API key
 
+## Responsible Use
+
+claude-duet is built for legitimate pair programming and collaboration between developers. Please use it responsibly and in accordance with [Anthropic's Usage Policy](https://www.anthropic.com/policies/usage-policy) and your own API terms.
+
 ## ⌥ Development
 
 ```bash
